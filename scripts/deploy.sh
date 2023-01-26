@@ -24,11 +24,10 @@ else
   sleep 5
 fi
 
-echo "> 새 애플리케이션 배포"
+cp $PROJECT_ROOT/build/libs/*.jar $PROJECT_ROOT/
 
-JAR_NAME=$(ls $PROJECT_ROOT |grep $PROJECT_NAME | tail -n 1)
+JAR_NAME=$(ls $PROJECT_ROOT | grep $PROJECT_NAME | tail -n 1)
 
-cp ./build/libs/*.jar $PROJECT_ROOT/
 
 echo "> $JAR_NAME 에 실행권한 추가"
 chmod +x $JAR_NAME
