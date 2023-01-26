@@ -30,7 +30,7 @@ JAR_NAME=$(ls $PROJECT_ROOT | grep $PROJECT_NAME | tail -n 1)
 
 
 echo "> $JAR_NAME 에 실행권한 추가"
-chmod +x $JAR_NAME
+chmod u+x $JAR_NAME
 
 # jar 파일 실행
 echo "$TIME_NOW > $JAR_NAME 파일 실행" >> $DEPLOY_LOG
