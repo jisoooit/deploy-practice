@@ -23,6 +23,6 @@ public class TestController {
             log.warn("/deploy/test 이 호출되었어요. warn 로그 #####################################");
         }
 
-        return "<h1>deploy test!!!</h1>"+ todoRepository.findById(1L);
+        return "<h1>deploy test!!</h1>"+ todoRepository.findById(1L);
     }
 }
